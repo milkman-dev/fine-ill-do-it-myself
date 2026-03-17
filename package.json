@@ -1,0 +1,27 @@
+{
+  "name": "fine-ill-do-it-myself",
+  "displayName": "Fine ill do it myself",
+  "description": "A dark navy theme I wanted and didn't find",
+  "version": "0.1.0",
+  "publisher": "your-publisher-id",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Fine ill do it myself",
+        "uiTheme": "vs-dark",
+        "path": "./themes/fine-ill-do-it-myself-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/fine-ill-do-it-myself"
+  },
+  "license": "MIT"
+}
