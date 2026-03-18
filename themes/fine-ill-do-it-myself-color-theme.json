@@ -1152,6 +1152,280 @@
       "settings": { "foreground": "#5C6370" }
     },
 
+    // ─── PHP ──────────────────────────────────────────────────────────────────
+    {
+      "name": "PHP - opening/closing tags (<?php ?>)",
+      "scope": [
+        "punctuation.section.embedded.begin.php",
+        "punctuation.section.embedded.end.php"
+      ],
+      "settings": { "foreground": "#C678DD" }
+    },
+    {
+      "name": "PHP - variables ($var)",
+      "scope": [
+        "variable.other.php",
+        "variable.other.normal.php"
+      ],
+      "settings": { "foreground": "#9CDCFE" }
+    },
+    {
+      "name": "PHP - $this",
+      "scope": [ "variable.language.this.php" ],
+      "settings": { "foreground": "#61AFEF" }
+    },
+    {
+      "name": "PHP - namespaces and use",
+      "scope": [
+        "support.other.namespace.php",
+        "entity.name.type.namespace.php"
+      ],
+      "settings": { "foreground": "#6EC9A8" }
+    },
+    {
+      "name": "PHP - type hints (int string bool array)",
+      "scope": [
+        "keyword.other.type.php",
+        "storage.type.php"
+      ],
+      "settings": { "foreground": "#6EC9A8" }
+    },
+    {
+      "name": "PHP - heredoc / nowdoc",
+      "scope": [
+        "string.unquoted.heredoc.php",
+        "string.unquoted.nowdoc.php"
+      ],
+      "settings": { "foreground": "#D19A66" }
+    },
+
+    // ─── Ruby ─────────────────────────────────────────────────────────────────
+    {
+      "name": "Ruby - symbols (:foo)",
+      "scope": [
+        "constant.other.symbol.ruby",
+        "constant.other.symbol.hashkey.ruby"
+      ],
+      "settings": { "foreground": "#C678DD" }
+    },
+    {
+      "name": "Ruby - instance / class / global variables (@var @@var $var)",
+      "scope": [
+        "variable.other.readwrite.instance.ruby",
+        "variable.other.readwrite.class.ruby",
+        "variable.other.readwrite.global.ruby"
+      ],
+      "settings": { "foreground": "#9CDCFE" }
+    },
+    {
+      "name": "Ruby - self",
+      "scope": [ "variable.language.self.ruby" ],
+      "settings": { "foreground": "#61AFEF" }
+    },
+    {
+      "name": "Ruby - string interpolation #{...}",
+      "scope": [
+        "punctuation.section.embedded.begin.ruby",
+        "punctuation.section.embedded.end.ruby"
+      ],
+      "settings": { "foreground": "#D291FF" }
+    },
+    {
+      "name": "Ruby - special method keywords (require include raise attr_*)",
+      "scope": [ "keyword.other.special-method.ruby" ],
+      "settings": { "foreground": "#61AFEF" }
+    },
+    {
+      "name": "Ruby - sigil strings (%w[] %i[] %r[])",
+      "scope": [
+        "string.quoted.other.literal.upper.ruby",
+        "string.quoted.other.literal.lower.ruby"
+      ],
+      "settings": { "foreground": "#D19A66" }
+    },
+
+    // ─── SQL ──────────────────────────────────────────────────────────────────
+    {
+      "name": "SQL - DML/DDL keywords (SELECT FROM WHERE JOIN CREATE DROP etc.)",
+      "scope": [
+        "keyword.other.DML.sql",
+        "keyword.other.DDL.sql",
+        "keyword.other.create.sql",
+        "keyword.other.drop.sql",
+        "keyword.other.sql"
+      ],
+      "settings": { "foreground": "#61AFEF" }
+    },
+    {
+      "name": "SQL - logical / comparison operators (AND OR NOT IN LIKE BETWEEN)",
+      "scope": [
+        "keyword.operator.logical.sql",
+        "keyword.operator.comparison.sql",
+        "keyword.operator.sql"
+      ],
+      "settings": { "foreground": "#D291FF" }
+    },
+    {
+      "name": "SQL - data types (INT VARCHAR TEXT DATE BOOLEAN)",
+      "scope": [
+        "storage.type.sql",
+        "support.type.sql"
+      ],
+      "settings": { "foreground": "#6EC9A8" }
+    },
+    {
+      "name": "SQL - built-in functions (COUNT SUM AVG MAX MIN COALESCE)",
+      "scope": [
+        "support.function.aggregate.sql",
+        "support.function.scalar.sql",
+        "support.function.string.sql"
+      ],
+      "settings": { "foreground": "#E5D0A1" }
+    },
+
+    // ─── GraphQL ──────────────────────────────────────────────────────────────
+    {
+      "name": "GraphQL - operation keywords (query mutation subscription fragment on)",
+      "scope": [
+        "keyword.operation.graphql",
+        "keyword.other.graphql"
+      ],
+      "settings": { "foreground": "#61AFEF" }
+    },
+    {
+      "name": "GraphQL - directives (@deprecated @skip @include)",
+      "scope": [
+        "entity.name.directive.graphql",
+        "entity.name.function.directive.graphql",
+        "punctuation.definition.directive.graphql"
+      ],
+      "settings": { "foreground": "#C678DD" }
+    },
+    {
+      "name": "GraphQL - variables ($varName)",
+      "scope": [
+        "variable.graphql",
+        "variable.definition.graphql"
+      ],
+      "settings": { "foreground": "#9CDCFE" }
+    },
+    {
+      "name": "GraphQL - enum values",
+      "scope": [
+        "constant.other.enum.graphql",
+        "string.unquoted.enum.graphql"
+      ],
+      "settings": { "foreground": "#98C379" }
+    },
+    {
+      "name": "GraphQL - fragment spread (...)",
+      "scope": [ "punctuation.definition.fragment-spread.graphql" ],
+      "settings": { "foreground": "#D291FF" }
+    },
+
+    // ─── Dockerfile ───────────────────────────────────────────────────────────
+    {
+      "name": "Dockerfile - instructions (FROM RUN COPY ENV WORKDIR EXPOSE etc.)",
+      "scope": [
+        "keyword.other.dockerfile",
+        "keyword.control.dockerfile"
+      ],
+      "settings": { "foreground": "#61AFEF" }
+    },
+    {
+      "name": "Dockerfile - image / stage names",
+      "scope": [
+        "entity.name.image.dockerfile",
+        "variable.other.readwrite.dockerfile"
+      ],
+      "settings": { "foreground": "#6EC9A8" }
+    },
+    {
+      "name": "Dockerfile - variable references (${VAR} $VAR)",
+      "scope": [
+        "variable.env.dockerfile",
+        "punctuation.definition.variable.dockerfile"
+      ],
+      "settings": { "foreground": "#9CDCFE" }
+    },
+
+    // ─── Swift ────────────────────────────────────────────────────────────────
+    {
+      "name": "Swift - attributes (@State @Binding @Published @ViewBuilder)",
+      "scope": [
+        "support.function.attribute.swift",
+        "storage.modifier.attribute.swift",
+        "entity.name.attribute.swift",
+        "punctuation.definition.attribute.swift"
+      ],
+      "settings": { "foreground": "#C678DD" }
+    },
+    {
+      "name": "Swift - compiler directives (#if #available #selector #warning)",
+      "scope": [
+        "keyword.other.hash.swift",
+        "keyword.preprocessor.swift"
+      ],
+      "settings": { "foreground": "#C678DD" }
+    },
+    {
+      "name": "Swift - string interpolation \\(...)",
+      "scope": [
+        "punctuation.section.embedded.begin.swift",
+        "punctuation.section.embedded.end.swift"
+      ],
+      "settings": { "foreground": "#D291FF" }
+    },
+    {
+      "name": "Swift - self / super",
+      "scope": [
+        "variable.language.self.swift",
+        "variable.language.super.swift"
+      ],
+      "settings": { "foreground": "#61AFEF" }
+    },
+    {
+      "name": "Swift - declaration specifiers (some any mutating inout)",
+      "scope": [ "keyword.other.declaration-specifier.swift" ],
+      "settings": { "foreground": "#61AFEF" }
+    },
+
+    // ─── Kotlin ───────────────────────────────────────────────────────────────
+    {
+      "name": "Kotlin - annotations (@Composable @Override @JvmStatic)",
+      "scope": [
+        "storage.type.annotation.kotlin",
+        "entity.name.type.annotation.kotlin",
+        "punctuation.definition.annotation.kotlin"
+      ],
+      "settings": { "foreground": "#C678DD" }
+    },
+    {
+      "name": "Kotlin - string templates ($name ${expr})",
+      "scope": [
+        "punctuation.definition.template-expression.begin.kotlin",
+        "punctuation.definition.template-expression.end.kotlin",
+        "variable.identifier.kotlin"
+      ],
+      "settings": { "foreground": "#D291FF" }
+    },
+    {
+      "name": "Kotlin - safe call / not-null operators (?. !!)",
+      "scope": [
+        "keyword.operator.safe-navigation.kotlin",
+        "keyword.operator.notnull.kotlin"
+      ],
+      "settings": { "foreground": "#D9E0EE" }
+    },
+    {
+      "name": "Kotlin - companion / object / data / sealed modifiers",
+      "scope": [
+        "storage.modifier.kotlin",
+        "keyword.other.companion.kotlin"
+      ],
+      "settings": { "foreground": "#61AFEF", "fontStyle": "italic" }
+    },
+
     // ─── JSDoc ────────────────────────────────────────────────────────────────
     {
       "name": "JSDoc - tags (@param, @returns…)",
