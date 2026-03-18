@@ -468,9 +468,7 @@
       "scope": [
         "meta.object-literal.key",
         "meta.object.member string.quoted",
-        "support.type.property-name",
-        "string.quoted.double.json",
-        "string.quoted.single.json"
+        "support.type.property-name"
       ],
       "settings": { "foreground": "#D19A66" }
     },
@@ -558,6 +556,14 @@
       "name": "HTML/JSX attributes",
       "scope": [ "entity.other.attribute-name" ],
       "settings": { "foreground": "#E5D0A1" }
+    },
+    {
+      "name": "HTML - entities (&amp; &#x00; etc.)",
+      "scope": [
+        "constant.character.entity.html",
+        "punctuation.definition.entity.html"
+      ],
+      "settings": { "foreground": "#C678DD" }
     },
 
     // ─── Invalid / deprecated ─────────────────────────────────────────────────
@@ -933,6 +939,14 @@
       "settings": { "foreground": "#C678DD" }
     },
     {
+      "name": "CSS - attribute selectors ([type=\"text\"])",
+      "scope": [
+        "entity.other.attribute-name.attribute.css",
+        "meta.attribute-selector.css entity.other.attribute-name"
+      ],
+      "settings": { "foreground": "#E5D0A1" }
+    },
+    {
       "name": "CSS - color literals",
       "scope": [
         "constant.other.color.rgb-value.css",
@@ -1043,6 +1057,41 @@
       "settings": { "foreground": "#98C379" }
     },
 
+    // ─── JSON ─────────────────────────────────────────────────────────────────
+    // Keys → sky blue (consistent with YAML/TOML). Both scopes handle old and
+    // new VS Code JSON grammar versions.
+    {
+      "name": "JSON - keys",
+      "scope": [
+        "support.type.property-name.json",
+        "meta.structure.dictionary.key.json string.quoted.double.json"
+      ],
+      "settings": { "foreground": "#61AFEF" }
+    },
+    // String values inherit the generic string rule (#D19A66), but we pin it
+    // explicitly so it wins over any object-key fallbacks.
+    {
+      "name": "JSON - string values",
+      "scope": [
+        "meta.structure.dictionary.value.json string.quoted.double.json",
+        "meta.structure.array.value.json string.quoted.double.json"
+      ],
+      "settings": { "foreground": "#D19A66" }
+    },
+    {
+      "name": "JSON - numbers",
+      "scope": [ "constant.numeric.json" ],
+      "settings": { "foreground": "#98C379" }
+    },
+    {
+      "name": "JSON - boolean / null",
+      "scope": [
+        "constant.language.boolean.json",
+        "constant.language.null.json"
+      ],
+      "settings": { "foreground": "#98C379" }
+    },
+
     // ─── Markdown ─────────────────────────────────────────────────────────────
     {
       "name": "Markdown - headings",
@@ -1088,6 +1137,19 @@
         "punctuation.definition.quote.begin.markdown"
       ],
       "settings": { "foreground": "#5C6370", "fontStyle": "italic" }
+    },
+    {
+      "name": "Markdown - list markers (- * 1.)",
+      "scope": [
+        "punctuation.definition.list.begin.markdown",
+        "beginning.punctuation.definition.list.markdown"
+      ],
+      "settings": { "foreground": "#D291FF" }
+    },
+    {
+      "name": "Markdown - horizontal rule",
+      "scope": [ "meta.separator.markdown" ],
+      "settings": { "foreground": "#5C6370" }
     },
 
     // ─── JSDoc ────────────────────────────────────────────────────────────────
