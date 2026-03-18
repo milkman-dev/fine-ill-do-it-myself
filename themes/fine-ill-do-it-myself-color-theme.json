@@ -9,8 +9,8 @@
     "editor.selectionBackground": "#D291FF30",
     "editor.inactiveSelectionBackground": "#D291FF18",
     "editor.selectionHighlightBackground": "#D291FF20",
-    "editor.wordHighlightBackground": "#B0E0E620",
-    "editor.wordHighlightStrongBackground": "#B0E0E635",
+    "editor.wordHighlightBackground": "#9CDCFE20",
+    "editor.wordHighlightStrongBackground": "#9CDCFE35",
     "editor.findMatchBackground": "#D19A6650",
     "editor.findMatchHighlightBackground": "#D19A6628",
     "editor.rangeHighlightBackground": "#2C313C80",
@@ -453,13 +453,13 @@
         "variable.other.readwrite",
         "variable.other.property"
       ],
-      "settings": { "foreground": "#B0E0E6" }
+      "settings": { "foreground": "#9CDCFE" }
     },
     // Parameters — same pale cyan as variables, italic to distinguish
     {
       "name": "Function parameters",
       "scope": [ "variable.parameter" ],
-      "settings": { "foreground": "#B0E0E6", "fontStyle": "italic" }
+      "settings": { "foreground": "#9CDCFE", "fontStyle": "italic" }
     },
 
     // ─── Object / dict keys ───────────────────────────────────────────────────
@@ -581,7 +581,7 @@
         "variable.language.special.self.python",
         "variable.language.special.cls.python"
       ],
-      "settings": { "foreground": "#B0E0E6", "fontStyle": "italic" }
+      "settings": { "foreground": "#9CDCFE", "fontStyle": "italic" }
     },
     {
       "name": "Python - exception types",
@@ -861,7 +861,7 @@
     {
       "name": "Rust - self",
       "scope": [ "variable.language.self.rust" ],
-      "settings": { "foreground": "#B0E0E6", "fontStyle": "italic" }
+      "settings": { "foreground": "#9CDCFE", "fontStyle": "italic" }
     },
 
     // ─── CSS / SCSS ───────────────────────────────────────────────────────────
@@ -997,7 +997,7 @@
         "variable.other.normal.shell",
         "variable.other.bracket.shell"
       ],
-      "settings": { "foreground": "#B0E0E6" }
+      "settings": { "foreground": "#9CDCFE" }
     },
     {
       "name": "Shell - command substitution $(…)",
@@ -1130,10 +1130,10 @@
     "property.declaration": "#E5D0A1",
     "string": "#D19A66",
     "number": "#98C379",
-    "variable": "#B0E0E6",
-    "parameter": { "foreground": "#B0E0E6", "italic": true },
-    "property": "#B0E0E6",
-    "property.readonly": "#B0E0E6",
+    "variable": "#9CDCFE",
+    "parameter": { "foreground": "#9CDCFE", "italic": true },
+    "property": "#9CDCFE",
+    "property.readonly": "#9CDCFE",
     "namespace": "#6EC9A8",
     "module": "#6EC9A8",
     "comment": { "foreground": "#5C6370", "italic": true },
@@ -1143,8 +1143,8 @@
     "macro": "#61AFEF",
     "builtinType": "#6EC9A8",
     "selfKeyword": "#61AFEF",
-    "selfParameter": "#B0E0E6",
-    "clsParameter": "#B0E0E6",
+    "selfParameter": "#9CDCFE",
+    "clsParameter": "#9CDCFE",
     "decorator": "#C678DD",
     "annotation": "#C678DD",
     "attribute": "#C678DD",
@@ -1157,8 +1157,8 @@
     "*.deprecated": { "strikethrough": true },
 
     // Python-specific
-    "selfParameter:python": { "foreground": "#B0E0E6", "italic": true },
-    "clsParameter:python": { "foreground": "#B0E0E6", "italic": true },
+    "selfParameter:python": { "foreground": "#9CDCFE", "italic": true },
+    "clsParameter:python": { "foreground": "#9CDCFE", "italic": true },
 
     // Rust-specific
     "*.unsafe": { "foreground": "#D291FF", "italic": true },
